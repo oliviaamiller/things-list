@@ -3,7 +3,8 @@ export function renderCakeCard(cake) {
     const a = document.createElement('a');
     const p = document.createElement('p');
 
-    div.classList.add('cakes-list');
+    div.classList.add('cake-cards');
+    a.classList.add('cake-links');
 
     p.textContent = cake.name;
     a.href = `./details/?id=${cake.id}`;
