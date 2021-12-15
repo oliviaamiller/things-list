@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link rel="stylesheet" href="../styles/details.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Red+Hat+Text:wght@300&display=swap');
     </style>
@@ -17,17 +17,17 @@
 <body>
 
     <main>
-        <span class="cakes-list">
-            <p class="title">cakes</p>
-            <div id="cakes-list-container">
+        <section class="main-section">
+            <div id="cake-detail-container">
 
             </div>
-        </span>
-        
+        </section>
     </main>
-   
+    <footer>
+        <a href="../">Home</a>
+    </footer>
 
-    <script type="module" src="./app.js"></script>
+    <script type="module" src="./details.js"></script>
 </body>
 
 </html>

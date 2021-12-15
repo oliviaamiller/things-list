@@ -10,7 +10,7 @@ html, body {
     background-color: rgb(58, 64, 79);
 }
 
-.cakes-list {
+#cake-detail-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -26,7 +26,21 @@ html, body {
     font-size: 100px;
 }
 
-.cake-cards {
+.cake-detail {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.cake-detail img {
+    width: 600px;
+    padding: 20px;
+    background-color: rgb(255, 227, 227);
+}
+
+.cake-info {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -35,20 +49,36 @@ html, body {
     font-family: 'Red Hat Text', sans-serif;
     font-size: 25px;
     text-transform: uppercase;
-
+    color:rgb(255, 204, 93);
+    background-color: rgb(79, 87, 109);
+    border: rgb(255, 227, 227) 2px solid;
+    margin-top: 20px;
+    width: 600px;
 }
 
-.cake-links:link { 
-    color:rgb(255, 204, 93);
+footer {
+    position: absolute;
+    bottom: 1%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 60px;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 25px;
+}
+
+footer a:link { 
+    color: rgb(255, 227, 227);
     text-decoration: none;
 }
 
-.cake-links:visited { 
-    color:rgb(255, 204, 93);
+footer a:visited { 
+    color: rgb(255, 227, 227);
     text-decoration: none;
 }
 
-.cake-links:hover { 
+footer a:hover { 
     color:rgb(255, 126, 210);
     text-decoration: none;
 }
