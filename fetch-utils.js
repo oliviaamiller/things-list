@@ -6,7 +6,7 @@ const SUPABASE_URL = 'https://mdkwiuegdkumfqoifkcr.supabase.co';
 // finally, here's the client object. this object is how we will get data from our database
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-export async function getCakes() {
+export async function fetchCakes() {
     const response = await client
         .from('cakes')
         .select();
@@ -16,7 +16,7 @@ export async function getCakes() {
 }
 
 
-export async function getCake(id) {
+export async function fetchCake(id) {
     const response = await client 
         .from('cakes')
         .select()
