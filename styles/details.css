@@ -7,4 +7,51 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
+    background-color: rgb(58, 64, 79);
+}
+
+#cake-detail-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    padding-top: 50px;
+}
+
+.title {
+    color: rgb(255, 227, 227);
+    font-family: 'Abril Fatface', sans-serif;
+    text-transform: uppercase;
+    font-size: 100px;
+}
+
+.cake-detail {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.cake-detail img {
+    width: 600px;
+    padding: 20px;
+    background-color: rgb(255, 227, 227);
+}
+
+.cake-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    color:rgb(255, 204, 93);
+    background-color: rgb(79, 87, 109);
+    border: rgb(255, 227, 227) 2px solid;
+    margin-top: 20px;
+    width: 600px;
 }

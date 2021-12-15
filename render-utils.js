@@ -17,6 +17,7 @@ export function renderCakeCard(cake) {
 
 export function renderCakeDetail(cake) {
     const div = document.createElement('div');
+    const infoDiv = document.createElement('div');
     const img = document.createElement('img');
     const nameEl = document.createElement('p');
     const flavorEl = document.createElement('p');
@@ -24,6 +25,7 @@ export function renderCakeDetail(cake) {
     const decorationEl = document.createElement('p');
     
     div.classList.add('cake-detail');
+    infoDiv.classList.add('cake-info');
 
     nameEl.textContent = cake.name;
     nameEl.classList.add('cake-name');
@@ -36,7 +38,9 @@ export function renderCakeDetail(cake) {
 
     img.src = `../assets/${cake.name}.jpeg`;
 
-    div.append(img, nameEl, flavorEl, icingEl, decorationEl);
+    infoDiv.append(nameEl, flavorEl, icingEl, decorationEl);
+
+    div.append(img, infoDiv);
     
     return div;
 }
